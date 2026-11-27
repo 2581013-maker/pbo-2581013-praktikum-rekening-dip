@@ -16,7 +16,8 @@ public class BankSolid {
         // Langkah 7: ganti EmailNotifikasi -> SmsNotifikasi
         // Jumlah baris yang diubah: 1 baris (hanya baris di bawah ini di main).
         // ProsesAkhirBulan tidak diubah sama sekali (itulah inti DIP).
-        ProsesAkhirBulan proses = new ProsesAkhirBulan();
+        Notifikasi notifikasi = new EmailNotifikasi();
+        ProsesAkhirBulan proses = new ProsesAkhirBulan(notifikasi);
 
         LaporanBank laporan = new LaporanBank();
 
